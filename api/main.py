@@ -42,7 +42,8 @@ async def get_elo_ratings():
        ratings[home_team] = new_home_elo
        ratings[away_team] = new_away_elo
 
-    return [{}]
+    return [{"team": team, "rating": rating} for team, rating in
+            ratings.items()]
 
 
        
