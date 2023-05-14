@@ -16,5 +16,5 @@ async def get_team_stats(year):
     batting_page = await fetch_page(batting_url)
     pitching_page = await fetch_page(pitching_url)
     
-    batting_soup = 
+    batting_soup = BeautifulSoup(batting_page, "html.parser")
     pitching_soup = 
